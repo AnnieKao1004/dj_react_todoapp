@@ -32,6 +32,7 @@ class TodoList extends Component {
       }
       return <TodoItem key={item.id} data={item} index={index} handleInputModal={this.props.handleInputModal}/> //key用index的話會有問題...應該是因為不管順序怎麼變key都一樣的關係?
     }) 
+    
     const empty = todos.every((currentValue) => currentValue === null) // 判斷todos array是否每個元素都是null
 
     return (

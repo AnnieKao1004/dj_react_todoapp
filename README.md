@@ -1,17 +1,23 @@
 # Todo App
 A todo app with CRUD functions and user authentication.
 
+# Features
+- REST API built by Django
+- User interface built by React
+- State management using Redux (with redux-thunk middleware)
+- Getting data from API with axios
+
 # Demo
 [Live demo](https://anniekao1004.github.io/todoapp/#/)
 
 ![Screenshot](./Screenshot.PNG)
 
-# Backend:
+# Backend
    - django
    - django-rest-framework
    - django-rest-auth (token-based authentication)
 
-# Frontend:
+# Frontend
    - react
    - react-router
    - redux

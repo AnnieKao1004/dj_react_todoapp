@@ -1,7 +1,7 @@
 const authReducer = (state={username: null, authenticated: false, loginMessage: [], signupMessage: {}}, action) => {
   switch (action.type) {
     case 'LOGIN':
-      return {...state, username: action.username, authenticated: true, loginMessage: null, signupMessage: {}}
+      return {...state, username: action.username, authenticated: true, loginMessage: [], signupMessage: {}}
     case 'LOGIN_FAIL':
       return {...state, loginMessage: action.message}
     case 'SIGNUP_USERNAME_FAIL':

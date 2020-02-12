@@ -31,8 +31,6 @@ const authLoginFail = (message) => {
   }
 }
 
-
-
 export const cleanSignupMessage = () => {
   return {
     type: 'CLEAN_SIGNUP_MSG'
@@ -45,18 +43,18 @@ export const cleanLoginMessage = () => {
   }
 }
 
+const authLogout = () => {
+  return {
+    type: 'LOGOUT',
+    username: ''
+  }
+}
+
 const setAuth = (username, result) => {
   return {
     type: 'SETAUTH',
     username: username,
     authenticated: result
-  }
-}
-
-const authLogout = () => {
-  return {
-    type: 'LOGOUT',
-    username: ''
   }
 }
 
