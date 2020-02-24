@@ -242,3 +242,44 @@ span.badge {
   left: 47%;
   top: 70px;
 }
+
+/* SearchBox */
+.search-wrapper {
+  height: 36px;
+  position: relative;
+}
+
+input.search-field {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.54);
+  border: 0;
+  border-radius: 5px;
+  padding: 8px 8px 8px 60px;
+  background: #f5f4f4;
+  transition: background 0.5s;
+}
+
+input.search-field::placeholder {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+input.search-field:hover {
+  background: #ebebeb;
+}
+
+input.search-field:focus {
+  outline: none;
+  color: #212121;
+}
+
+.search-icon {
+  position: absolute;
+  right: 160px;
+  top: 7px;
+  color: rgba(0, 0, 0, 0.54);
+}
